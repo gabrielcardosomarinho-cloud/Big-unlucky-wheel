@@ -1,7 +1,7 @@
 import random
 
 # List of prizes
-prizes = ["Mug", "T-shirt", "Gift Card", "Nothing"]
+prizes = ["Mug", "T-shirt", "Gift Card", "Nothing", "Lebron James"]
 
 # Get user input
 wheel = input("Big unlucky wheel! Type YES to spin: ").lower()
