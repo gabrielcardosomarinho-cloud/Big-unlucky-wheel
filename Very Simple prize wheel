@@ -1,19 +1,34 @@
 import random
 
-# List of prizes
-prizes = ["Mug", "T-shirt", "Gift Card", "Nothing", "Lebron James"]
-
-# Get user input
-wheel = input("Big unlucky wheel! Type YES to spin: ").lower()
-print("Congratulations, you spun:")
-
-# Randomly pick a prize
-result = random.choice(prizes)
-
-# Check user input
-if wheel in ["yes", "y", "sim", "s"]:
-    print(result)
-elif wheel in ["n", "no", "não", "nao"]:
-    print("So you get: nothing, haha!!")
-else:
-    print("Can't even type properly, you LOSER!")
+prizes = [" mug", " T-Shirt", " Gift Card", " Nothing", " Lebron James", " Lose Everything, Lol"]
+wheel = input("Big Unlucky Wheel, You Wanna Gamble???!").lower()
+if wheel in ["no","nah", "nope"]:
+     print(" Huh??? Are you serious?. Get Lost Before You Lose Everything 💀")
+     exit()
+while True:
+  result = random.choice(prizes)
+  
+  if wheel in ["yes", "y", "ye"]:
+   print( "Congratulations! You Spun:" )
+   print(result)
+  else:
+    print(" You Can't Even Type Properly, You LOSER! 🤣")
+    exit()  
+  if result == " mug":
+   print("   a mug???? well... better luck next time pal")
+  elif result == " T-Shirt":
+       print("   a T-Shirt?? ok bro, atleast you got some new clothes 🥳 ")
+  elif result == " Gift Card":
+     print(   "   uhm, a Gift Card, that was a lucky spin, congratulations!!")
+  elif result == " Nothing":
+     print("   The wheel never said that u would get something, W unlucky wheel")
+  elif result == " Lebron James":
+     print("   LEBRON JAMES, LEBRON JAMES 🗣️🔥") 
+  gamble =  input("  Huh? you wanna Gamble Again?!!")
+  if gamble in ["yes", "y", "ye"]:
+   print( "Congratulations! You Spun:" )
+   print(result)
+  elif gamble in ["nah", "no", "nope"]:
+      print("Leaving Already? Ok. 😏 ")
+      exit()
+    
