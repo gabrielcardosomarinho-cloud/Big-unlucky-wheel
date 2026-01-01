@@ -6,6 +6,8 @@ input() and user interaction
 Conditional statements (if, elif, else)
 Lists and random selection (random.choice)
 Basic string manipulation
+
+
 How to Use????:
 
 1.Run the Python script.
